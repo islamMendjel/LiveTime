@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Time (created by Islam Mendjel)</title>
+	<script>
+		function updateClock() {
+			var now = new Date();
+			var dayNames = ["حد", "ثنين", "ثلاث", "أربعا", "خميس", "جمعة", "سبت"];
+			var monthNames = ["جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان", "جويلية", "اوت", "سيبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+			var day = now.getDay();
+			var month = now.getMonth();
+			var hour = now.getHours();
+			var minute = now.getMinutes();
+			var second = now.getSeconds();
+			var dateString = dayNames[day] + ", " + monthNames[month] + " " + now.getDate() + ", " + now.getFullYear();
+			var timeString = hour + ":" + (minute < 10 ? "0" + minute : minute) + ":" + (second < 10 ? "0" + second : second);
+			document.getElementById("time").innerHTML = timeString;
+			document.getElementById("date").innerHTML = dateString;
+		}
+		setInterval(updateClock, 1000);
+	</script>
+</head>
+<body>
+	<h1>Live Time</h1>
+	<p id="time"></p>
+	<p id="date"></p>
+	<p>Created by Islam Mendjel</p>
+</body>
+</html>
