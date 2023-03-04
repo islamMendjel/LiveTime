@@ -2,6 +2,19 @@
 <html>
 <head>
 	<title>Live Time (created by Islam Mendjel)</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		p {
+			margin: 0;
+		}
+	</style>
 	<script>
 		function updateClock() {
 			var now = new Date();
@@ -14,16 +27,18 @@
 			var second = now.getSeconds();
 			var dateString = dayNames[day] + ", " + monthNames[month] + " " + now.getDate() + ", " + now.getFullYear();
 			var timeString = hour + ":" + (minute < 10 ? "0" + minute : minute) + ":" + (second < 10 ? "0" + second : second);
-			document.getElementById("time").innerHTML = timeString;
 			document.getElementById("date").innerHTML = dateString;
+			document.getElementById("time").innerHTML = timeString;
 		}
 		setInterval(updateClock, 1000);
 	</script>
 </head>
 <body>
+	<h1>Welcome</h1>
 	<h1>Live Time</h1>
-	<p id="time"></p>
 	<p id="date"></p>
+	<p id="time"></p>
 	<p>Created by Islam Mendjel</p>
+	<p>&copy;2022-2023</p>
 </body>
 </html>
