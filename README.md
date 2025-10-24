@@ -1,3 +1,4 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=90&section=header"/>
 # ⧉ Time Portal ⧉ – First HTML Web Test
 Welcome to my first HTML web project! This is a simple but visually rich digital clock interface that displays the current time and date in Arabic, designed to feel like you're stepping into another world.
 
@@ -41,3 +42,5 @@ index.html – Contains the updated Time Portal code (2025)
 
 💡 Why This Project Matters
 This project is important to me because it represents my first step into web development. It shows how far I've come—from a basic static page to an animated and stylized experience. It’s a tribute to continuous learning and improvement.
+
+![](https://github.com/idimetrix/BEPb/blob/main/assets/Bottom_down.svg)
